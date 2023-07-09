@@ -57,4 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 
-##deviseの導入まで
+##10章　投稿機能まで
