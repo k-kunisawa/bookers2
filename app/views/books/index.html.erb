@@ -8,6 +8,7 @@
     <%= link_to book.title, book_path(book.id) %>
   </span>
   <p><%= book.body %></p>
+  <%= link_to "edit", edit_book_path(book) %>
 
 <% end %>
 

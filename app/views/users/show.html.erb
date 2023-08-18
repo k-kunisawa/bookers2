@@ -1,0 +1,13 @@
+<!-- app/views/users/show.html.erb -->
+<h1><%= @user.name %> の詳細ページ</h1>
+
+<p>メールアドレス: <%= @user.email %></p>
+<p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
+<!-- 他の詳細情報を表示 -->
+
+<h2>投稿一覧</h2>
+<% @user.books.each do |book| %>
+  <p>タイトル: <%= link_to book.title, book_path(book) %></p>
+  <p>本文: <%= book.body %></p>
+  <%= link_to "edit", edit_book_path(book) %>
+<% end %>
